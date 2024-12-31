@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-javascript-template",
+  "name": "css-homepage",
   "version": "1.0.0",
-  "description": "project template for javascript projects based in NodeJs with Webpack",
+  "description": "Homepage page to apply the knowledge for responsive design",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -12,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/orbec/nodejs-javascript-template.git"
+    "url": "git+ssh://git@github.com/orbec/css-Homepage.git"
   },
   "keywords": [
     "Nodejs",
-    "template",
-    "javascript"
+    "css",
+    "homepage"
   ],
   "author": "jalopezing@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/orbec/nodejs-javascript-template/issues"
+    "url": "https://github.com/orbec/css-Homepage/issues"
   },
-  "homepage": "https://github.com/orbec/nodejs-javascript-template#readme",
+  "homepage": "https://github.com/orbec/css-Homepage#readme",
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",

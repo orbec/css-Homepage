@@ -27,13 +27,14 @@ module.exports = {
       //optional - loading images used in html files
       {
         test: /\.html$/i,
-        use: "html-loader",
+        loader: "html-loader",
       },
       //optional - loading images used in js files
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: "asset/resource",
+        type: "asset/resource",
       },
+
       //optional - loading third party fonts
       {
         test: /\.(woff|woff2|ttf)$/i,
@@ -46,11 +47,9 @@ module.exports = {
           loader: "babel-loader",
           options: {
             targets: "defaults",
-            presets: [
-              ["@babel/preset-env"]
-            ]
-          }
-        }
+            presets: [["@babel/preset-env"]],
+          },
+        },
       },
     ],
   },

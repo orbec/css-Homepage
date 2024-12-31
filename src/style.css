@@ -5,6 +5,82 @@
 
 html,
 body {
-  height: 100%;
-  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-weight: bold;
+  unicode-bidi: isolate;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h2 {
+  margin-block-start: 0.5em;
+}
+
+p {
+  margin-block-start: 0.75em;
+  font-weight: normal;
+}
+
+header {
+  background: rgb(190, 191, 193);
+  background: linear-gradient(
+    174deg,
+    rgba(190, 191, 193, 79%) 30%,
+    rgba(255, 255, 255) 50%
+  );
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+header > .container,
+main > .container {
+  width: 90%;
+  margin: auto;
+  padding-top: 1rem;
+  flex-direction: row;
+  gap: 50px;
+}
+
+header img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.links {
+  align-self: end;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.links img {
+  width: 1.5rem;
+}
+
+main {
+  flex: 1;
+}
+
+main > .container {
+  flex-direction: column;
+  padding-top: 0%;
+}
+
+footer {
+  background-color: rgba(190, 191, 193, 79%);
+  flex: 1;
 }
