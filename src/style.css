@@ -8,7 +8,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 h1,
@@ -57,8 +57,9 @@ main > .container {
 }
 
 header img {
-  width: 180px;
+  max-height: 240px;
   border-radius: 50%;
+  margin: auto;
 }
 
 .links {
@@ -83,4 +84,16 @@ main > .container {
 footer {
   background-color: rgba(190, 191, 193, 79%);
   flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 1.5rem;
+}
+
+footer > .container {
+  width: 90%;
+  margin: auto;
+}
+
+footer img {
+  max-width: 200px;
 }
